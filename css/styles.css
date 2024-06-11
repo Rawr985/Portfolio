@@ -1,62 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
 section {
-    margin: 15px;
-    gap: 10px; /* Esto agrega un espacio entre los elementos de la cuadrícula. */
+  margin: 15px;
+  gap: 10px;
 }
 
 .proyectos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Esto crea una cuadrícula con 4 columnas de igual tamaño. */
-    gap: 10px; /* Esto agrega un espacio entre los elementos de la cuadrícula. */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .perfil {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
 }
 
 .proyecto {
-    border: 3px solid black; /* Esto agrega un marco negro alrededor del proyecto. */
-    padding: 10px;
-    margin: 10px;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
 }
 
 .proyecto a {
-    display: block; /* Esto hace que el enlace se muestre como un bloque, ocupando toda la línea. */
-    text-decoration: none; /* Esto elimina el subrayado del enlace. */
-    color: black; /* Esto hace que el texto del enlace sea negro. */
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 .proyecto p {
-    margin-top: 10px; /* Esto agrega un espacio entre el enlace y la descripción. */
+  margin-top: 10px;
 }
 
 hr {
-    border: none;
-    border-top: 1px solid black;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.mailto {
+  color: #ffffff; /* Color blanco */
+  text-decoration: none; /* Elimina el subrayado del enlace */
 }

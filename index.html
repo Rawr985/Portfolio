@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rawr985</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
         <h1>Bienvenidos a mi Portafolio</h1>
     </header>
-    <section>
-        <h2>Acerca de mí</h2>
-        <img src="images/profile.jpeg" alt="Foto de perfil" class="perfil">
-        <p>Programador fullstack con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
-        <p>Técnico Superior en Programación graduado en el instituto Teclab con experiencia en reparación de PC e instalación de redes. Comprometido, perseverante y adaptable a nuevos desafíos.</p>
-    </section>
-    <section>
-        <h2>Mis Proyectos</h2>
-        <p>Conoce los proyectos en los que he trabajado.</p>
-        <div class="proyectos">
-            <div class="proyecto">
-                <a href="https://thepointrosario.netlify.app"target="_blank">thepointrosario.netlify.app</a>
-                <hr>
-                <p>Desarrollé un sitio web para un minimarket en Rosario, Argentina, utilizando JavaScript, HTML y CSS. El sitio web cuenta con una interfaz sencilla, fácil de usar y permite a los clientes ver la información del local, encontrar sus productos y poder ubicar el negocio a través de google maps.</p>
-            </div>
-            <!-- Puedes agregar más proyectos de la misma manera -->
-        </div>
-    </section>
+    <main>
+        <section aria-labelledby="about-me">
+            <h2 id="about-me">Acerca de mí</h2>
+            <img src="images/profile.jpeg" alt="Foto de perfil de Luciano Gabrielloni" class="perfil">
+            <p>Programador fullstack con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
+            <p>Técnico Superior en Programación graduado en el instituto Teclab con experiencia en reparación de PC e instalación de redes. Comprometido, perseverante y adaptable a nuevos desafíos.</p>
+        </section>
+        <section aria-labelledby="my-projects">
+            <h2 id="my-projects">Mis Proyectos</h2>
+            <p>Conoce los proyectos en los que he trabajado.</p>
+            <ul class="proyectos">
+                <li class="proyecto">
+                    <a href="https://thepointrosario.netlify.app" target="_blank">thepointrosario.netlify.app</a>
+                    <hr>
+                    <p>Desarrollé un sitio web para un minimarket en Rosario, Argentina, utilizando JavaScript, HTML y CSS. El sitio web cuenta con una interfaz sencilla, fácil de usar y permite a los clientes ver la información del local, encontrar sus productos y poder ubicar el negocio a través de google maps.</p>
+                </li>
+                <!-- Puedes agregar más proyectos de la misma manera -->
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>Contacto: lucianogabrielloni@gmail.com</p>
-        <p>rawr985@proton.me</p>
+        <p>Contacto: <a href="mailto:lucianogabrielloni@gmail.com" class="mailto">lucianogabrielloni@gmail.com</a></p>
+        <p><a href="mailto:rawr985@proton.me" class="mailto">rawr985@proton.me</a></p>
     </footer>
 </body>
 </html>
