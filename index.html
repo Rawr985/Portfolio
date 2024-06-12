@@ -4,36 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rawr985</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center p-3">
         <h1>Bienvenidos a mi Portafolio</h1>
     </header>
-    <main>
-        <section aria-labelledby="about-me">
-            <h2 id="about-me">Acerca de mí</h2>
-            <img src="images/profile.jpeg" alt="Foto de perfil de Luciano Gabrielloni" class="perfil">
-            <p>Programador fullstack con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
-            <p>Técnico Superior en Programación graduado en el instituto Teclab con experiencia en reparación de PC e instalación de redes. Comprometido, perseverante y adaptable a nuevos desafíos.</p>
+    <main class="container mt-3">
+        <section class="row" aria-labelledby="about-me">
+            <h2 id="about-me" class="col-12 titulo">Acerca de mí</h2>
+            <img src="images/profile.jpeg" alt="Foto de perfil de Luciano Gabrielloni" class="perfil rounded-circle border border-dark mx-auto d-block">
+            <p class="col-12">Programador fullstack con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
+            <p class="col-12">Técnico Superior en Programación graduado en el instituto Teclab con experiencia en reparación de PC e instalación de redes. Comprometido, perseverante y adaptable a nuevos desafíos.</p>
         </section>
-        <section aria-labelledby="my-projects">
-            <h2 id="my-projects">Mis Proyectos</h2>
-            <p>Conoce los proyectos en los que he trabajado.</p>
-            <ul class="proyectos">
-                <li class="proyecto">
-                    <a href="https://thepointrosario.netlify.app" target="_blank">thepointrosario.netlify.app</a>
+        <section class="row" aria-labelledby="my-projects">
+            <h2 id="my-projects" class="col-12 titulo">Mis Proyectos</h2>
+            <p class="col-12">Conoce los proyectos en los que he trabajado.</p>
+            <div class="card col-12 col-md-6 col-lg-4 p-3 proyecto">
+                <div class="card-body">
+                    <a href="https://thepointrosario.netlify.app" target="_blank" class="card-title">thepointrosario.netlify.app</a>
                     <hr>
-                    <p>Desarrollé un sitio web para un minimarket en Rosario, Argentina, utilizando JavaScript, HTML y CSS. El sitio web cuenta con una interfaz sencilla, fácil de usar y permite a los clientes ver la información del local, encontrar sus productos y poder ubicar el negocio a través de google maps.</p>
-                </li>
-                <!-- Puedes agregar más proyectos de la misma manera -->
-            </ul>
+                    <p class="card-text">Desarrollé un sitio web para un minimarket en Rosario, Argentina, utilizando JavaScript, HTML y CSS. El sitio web cuenta con una interfaz sencilla, fácil de usar y permite a los clientes ver la información del local, encontrar sus productos y poder ubicar el negocio a través de google maps.</p>
+                </div>
+            </div>
+            <!-- Puedes agregar más proyectos de la misma manera -->
         </section>
     </main>
-    <footer>
-        <p>Contacto: <a href="mailto:lucianogabrielloni@gmail.com" class="mailto">lucianogabrielloni@gmail.com</a></p>
-        <p><a href="mailto:rawr985@proton.me" class="mailto">rawr985@proton.me</a></p>
+    <footer class="bg-dark text-white text-center p-3 fixed-bottom">
+        <p>Contacto: <a href="mailto:lucianogabrielloni@gmail.com" class="mailto text-white text-decoration-none">lucianogabrielloni@gmail.com</a></p>
+        <p><a href="mailto:rawr985@proton.me" class="mailto text-white text-decoration-none">rawr985@proton.me</a></p>
     </footer>
 </body>
 </html>

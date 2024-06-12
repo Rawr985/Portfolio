@@ -1,55 +1,38 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f0f0f0;
+  margin-bottom: 100px; /* Ajusta este valor según la altura de tu footer */
+  line-height: 1.6; /* Añade más espacio entre las líneas de texto */
+  cursor: url('images/puntero.ico'), auto; /* Añade el cursor personalizado */
 }
 
-header {
+header, footer {
   background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-section {
-  margin: 15px;
-  gap: 10px;
-}
-
-.proyectos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
 .perfil {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   border: 3px solid black;
 }
 
 .proyecto {
   border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px; /* Añade más espaciado alrededor de las tarjetas de proyectos */
+  margin: 20px; /* Añade más espaciado alrededor de las tarjetas de proyectos */
+  transition: transform .2s; /* Añade animación de hover a las tarjetas de proyectos */
+}
+
+.proyecto:hover {
+  transform: scale(1.02); /* Añade animación de hover a las tarjetas de proyectos */
 }
 
 .proyecto a {
-  display: block;
-  text-decoration: none;
   color: black;
+  transition: color .2s; /* Añade animación de desplazamiento suave a los enlaces de navegación */
+}
+
+.proyecto a:hover {
+  color: #333; /* Añade animación de desplazamiento suave a los enlaces de navegación */
 }
 
 .proyecto p {
@@ -57,11 +40,13 @@ footer {
 }
 
 hr {
-  border: none;
   border-top: 1px solid black;
 }
 
 .mailto {
   color: #ffffff; /* Color blanco */
-  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.titulo {
+  font-size: 25px; /* Ajusta este valor según el tamaño de fuente que desees */
 }
