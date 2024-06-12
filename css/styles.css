@@ -1,40 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Press Start 2P', cursive!important;
+}
+
 body {
   background-color: #f0f0f0;
-  margin-bottom: 100px; /* Ajusta este valor según la altura de tu footer */
-  line-height: 1.6; /* Añade más espacio entre las líneas de texto */
-  cursor: url('images/puntero.png'), auto; /* Añade el cursor personalizado */
+  margin-bottom: 100px;
+  line-height: 1.6;
+  cursor: url('images/puntero.ico'), auto!important;
 }
 
 header, footer {
   background-color: #333;
 }
 
+header {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bienvenidos {
+  font-size: 25px;
+}
+
+.bienvenidos.animate {
+  animation: pixel-art 2s infinite;
+}
+
+.animated {
+  animation: pixel-art 2s infinite;
+}
+
+@keyframes pixel-art {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  70% {
+    transform: translateY(5px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .perfil {
-  width: 100px;
-  height: 100px;
-  border: 3px solid black;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #333;
+  margin: 20px auto;
+  display: block;
 }
 
-.proyecto, .certification {
-  border: 3px solid black;
-  padding: 20px; /* Añade más espaciado alrededor de las tarjetas de proyectos y certificados */
-  margin: 20px; /* Añade más espaciado alrededor de las tarjetas de proyectos y certificados */
-  transition: transform .2s, background-color .5s; /* Añade animación de hover y transición de color a las tarjetas de proyectos y certificados */
-  box-shadow: 10px 10px 5px grey; /* Añade efecto de sombra a las tarjetas de proyectos y certificados */
+.perfil:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
-.proyecto:hover, .certification:hover {
-  transform: scale(1.02); /* Añade animación de hover a las tarjetas de proyectos y certificados */
-  background-color: #f0f0f0; /* Añade animación de transición de color a las tarjetas de proyectos y certificados */
+.proyecto,.certification {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 20px;
+  transition: transform.2s, background-color.5s;
+  box-shadow: 10px 10px 5px grey;
+  cursor: url('images/puntero.ico'), auto!important;
+}
+
+.proyecto:hover,.certification:hover {
+  transform: scale(1.02);
+  background-color: #f0f0f0;
 }
 
 .proyecto a {
   color: black;
-  transition: color .2s; /* Añade animación de desplazamiento suave a los enlaces de navegación */
+  transition: color.2s;
 }
 
 .proyecto a:hover {
-  color: #333; /* Añade animación de desplazamiento suave a los enlaces de navegación */
+  color: #333;
 }
 
 .proyecto p {
@@ -46,17 +113,18 @@ hr {
 }
 
 .mailto {
-  color: #ffffff; /* Color blanco */
+  color: #ffffff;
 }
 
 .titulo {
-  font-size: 25px; /* Ajusta este valor según el tamaño de fuente que desees */
+  font-size: 25px;
 }
 
 .certification-image {
-  width: 100%; /* Asegura que la imagen del certificado se ajuste al contenedor */
+  width: 100%;
   height: auto;
-  border: 1px solid black; /* Añade un marco alrededor de la imagen del certificado */
+  border: 1px solid black;
+  cursor: url('images/puntero.ico'), auto;
 }
 
 .certification-title {
