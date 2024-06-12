@@ -12,7 +12,7 @@ header, footer {
 .perfil {
   width: 100px;
   height: 100px;
-  border: 3px solid black; /* Añade un marco negro a la foto de perfil */
+  border: 3px solid black;
 }
 
 .proyecto, .certification {
@@ -20,6 +20,7 @@ header, footer {
   padding: 20px; /* Añade más espaciado alrededor de las tarjetas de proyectos y certificados */
   margin: 20px; /* Añade más espaciado alrededor de las tarjetas de proyectos y certificados */
   transition: transform .2s, background-color .5s; /* Añade animación de hover y transición de color a las tarjetas de proyectos y certificados */
+  box-shadow: 10px 10px 5px grey; /* Añade efecto de sombra a las tarjetas de proyectos y certificados */
 }
 
 .proyecto:hover, .certification:hover {
