@@ -1,5 +1,16 @@
 const sections = document.querySelectorAll('section[data-background]');
 
+document.addEventListener('DOMContentLoaded', () => {
+  const currentSection = getCurrentSection();
+  if (currentSection) {
+    const backgroundImage = currentSection.getAttribute('data-background');
+    document.body.style.backgroundImage = `url('images/${backgroundImage}')`;
+    document.body.style.transition = 'background-image 0.5s ease-in-out';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+  }
+});
+
 window.addEventListener('scroll', () => {
   const currentSection = getCurrentSection();
   if (currentSection) {
