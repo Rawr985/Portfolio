@@ -9,6 +9,9 @@ body {
   margin-bottom: 100px;
   line-height: 1.6;
   cursor: url('images/puntero.ico'), auto!important;
+  transition: background-image 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
 }
 
 header, footer {
@@ -68,24 +71,25 @@ header {
 }
 
 .perfil {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px; /* Asegúrate de que la altura sea igual al ancho para obtener una forma cuadrada */
   border: 3px solid #333;
   margin: 20px auto;
-  display: block;
+  display: inline-block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .perfil:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Agregado sombreado al hacer hover */
 }
 
 .proyecto,.certification {
   border: 3px solid black;
   padding: 20px;
   margin: 20px;
-  transition: transform.2s, background-color.5s;
+  transition: transform 0.2s, background-color 0.5s;
   box-shadow: 10px 10px 5px grey;
   cursor: url('images/puntero.ico'), auto!important;
 }
@@ -97,7 +101,7 @@ header {
 
 .proyecto a {
   color: black;
-  transition: color.2s;
+  transition: color 0.2s;
 }
 
 .proyecto a:hover {
@@ -129,4 +133,8 @@ hr {
 
 .certification-title {
   margin-top: 10px;
+}
+
+section {
+  margin-bottom: 40px; /* Agrega un margen de 40px entre las secciones */
 }
